@@ -1,0 +1,161 @@
+@import url(../font/stylesheet.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: #000;
+    font-size: 14px;
+}
+
+h1, h1, h2, h3, h4, h5, h6, h6 {
+    margin: 0;
+}
+
+.wrapper {
+    margin-top: 220px;
+}
+
+.smartphone {
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.info__link {
+    display: inline-block;
+    width: 153px;
+    height: 46px;
+    background: url("../img/google-play.png") 0 0 no-repeat;
+}
+
+.head__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.info__text {
+    margin: 0 auto;
+    max-width: 380px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info__text_01 {
+    margin-top: 77px;
+    margin-bottom: 20px;
+}
+
+.smartphone {
+    width: 248px;
+    margin: 0 auto;
+}
+
+.smartphone_01,
+.smartphone_02 {
+    animation: fadein_smart .8s ease normal forwards 1;
+    -webkit-animation: fadein_smart .8s ease normal forwards 1;
+}
+
+@keyframes fadein_smart {
+    0% {
+        opacity: 0
+    }
+    62.5% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadein_smart {
+    0% {
+        opacity: 0
+    }
+    62.5% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.info__link-container {
+    margin: 45px auto 0;
+    text-align: center;
+    animation: fadein_google 1s ease normal forwards 1;
+    -webkit-animation: fadein_google 1s ease normal forwards 1;
+}
+
+@keyframes fadein_google {
+    0% {
+        opacity: 0
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadein_google {
+    0% {
+        opacity: 0
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .smartphone_01 {
+        float: none;
+    }
+}
+
+/*Mobile Breakpoint*/
+
+@media (max-width: 576px) {
+
+    .wrapper {
+        margin-top: 115px;
+    }
+
+    .info__text_01 {
+        margin-top: 35px;
+    }
+
+    .smartphone {
+        margin: 0 auto;
+    }
+
+    .head__title {
+        max-width: 350px;
+        margin: 0 auto;
+        font-size: 36px;
+    }
+
+    .smartphone_01 {
+        display: none;
+    }
+
+    .smartphone_01,
+    .smartphone_02 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
